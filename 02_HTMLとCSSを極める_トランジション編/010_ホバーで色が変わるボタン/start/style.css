@@ -1,3 +1,7 @@
+#container {
+  text-align: center;
+}
+
 .btn {
   background-color: white;
   color: black;
@@ -6,7 +10,9 @@
   margin: 50px 0;
   font-weight: 600;
   cursor: pointer;
+  transition: all 0.3s;
 }
-#container {
-    text-align: center;
-}
+.btn:hover {
+  background-color: black;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
