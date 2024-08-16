@@ -17,12 +17,5 @@ $cBlack: black;
   &:hover {
     background-color: $cBlack;
     color: $cWhite;
-    $-cube{
-      background-color: $cBlack;
-    }
-
-    & .inner {
-      background-color: $cBlack;
-    }
   }
 }
