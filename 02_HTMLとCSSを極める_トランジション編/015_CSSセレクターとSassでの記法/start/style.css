@@ -1,0 +1,14 @@
+.parent {
+  color: blue;
+}
+.parent > .element.secound-child {
+  color: purple;
+}
+
+.element {
+  color: red;
+}
+
+child {
+  color: purple;
+}/*# sourceMappingURL=style.css.map */
