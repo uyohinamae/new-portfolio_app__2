@@ -21,7 +21,7 @@ $cBlack: black;
     posiion: relative;
     overflow: hidden;
 
-    &:;::before {
+    &::before {
       content: '';
       display: inline-block;
       width: 100%;
@@ -40,7 +40,7 @@ $cBlack: black;
     color:$cwhite;
   }
  
-  & span{
+  & ::before{
            transform: none;
   }
 
