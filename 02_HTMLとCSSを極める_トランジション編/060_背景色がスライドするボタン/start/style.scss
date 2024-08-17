@@ -21,7 +21,8 @@ $cBlack: black;
     posiion: relative;
     overflow: hidden;
 
-    & span {
+    &:;::before {
+      content: '';
       display: inline-block;
       width: 100%;
       height: 100%;
@@ -36,11 +37,9 @@ $cBlack: black;
   }
 
   &:hover {
-    
+    color:$cwhite;
   }
-  color:$cwhite;
-       
-  
+ 
   & span{
            transform: none;
   }
