@@ -23,6 +23,7 @@ $cBlack: black;
     perspective: 300px;
 
     &.span {
+      display: inline-block;
       transform: translate(20px);
     }
 
