@@ -6,10 +6,24 @@ body {
 
 @mixin animation(
   $name,
-  $duration: 1s
+  $duration: 1s,
+  $timing-function: ease,
+  $delay: 0s,
+  $iteration-count: 1,
+  $direction: normal,
+  $fill-mode: forwards
+  // このようにデフォルト値を置くだけでアニメーションnameだけを振ればいい
 ) {
-  animation-name: $name,;
-  animation-duration: $duration;
+  animation: {
+    name: $name;
+    duration: $duration;
+    timing-function: $timing-function;
+    delay: $delay;
+    iteration-count: $iteration-count;
+    direction: $direction;
+    fill-mode: $fill-mode;
+    // ハイフン以下の記述を省略できる
+  }
 }
 
 .rect {

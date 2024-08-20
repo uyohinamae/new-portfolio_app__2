@@ -9,6 +9,11 @@ body {
   background-color: black;
   animation-name: sk-bouncedelay;
   animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 
 .paused {
