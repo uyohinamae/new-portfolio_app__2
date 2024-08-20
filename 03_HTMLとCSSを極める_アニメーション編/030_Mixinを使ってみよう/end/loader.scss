@@ -36,7 +36,10 @@ body {
   // animation-iteration-count: infinite;
   // animation-direction: alternate-reverse;
   // animation-fill-mode: both;
-}
+  // animation-range-end: ;
+//   -webkit-animation-direction: normal;
+//   -moz-animation-iteration-count: initial;
+// }
 .paused {
   animation-play-state: paused;
 }
