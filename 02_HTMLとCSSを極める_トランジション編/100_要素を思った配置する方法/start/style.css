@@ -13,6 +13,8 @@
 }
 
 .child.v2 {
+  width: 200px;
+  height: 200px;
   background-color: palevioletred;
 }
 
@@ -24,7 +26,38 @@
  * 横方向のレイアウト
  */
 /* インライン要素に対して */
+.parent {
+  text-align: right;
+  letter-spacing: -6px;
+}
+
+.child {
+  display: inline-block;
+}
+
 /* ブロック要素を中央揃え */
+.child {
+  margin: 0 auto;
+  width: 100px;
+}
+
 /**
  * 上下方向のレイアウト
- *//*# sourceMappingURL=style.css.map */
+ */
+.parent {
+  position: relative;
+}
+
+.child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}/*# sourceMappingURL=style.css.map */
