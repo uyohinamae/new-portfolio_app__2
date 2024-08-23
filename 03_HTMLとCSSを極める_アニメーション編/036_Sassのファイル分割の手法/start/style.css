@@ -1,13 +1,11 @@
 body {
-    background: purple;
+  background: blue;
 }
 
 h1 {
-    color: blue;
+  color: blue;
 }
 
 h2 {
-    color: red;
-}
-
-/*# sourceMappingURL=style.css.map */
+  color: red;
+}/*# sourceMappingURL=style.css.map */
