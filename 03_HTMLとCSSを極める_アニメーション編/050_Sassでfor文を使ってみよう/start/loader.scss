@@ -12,6 +12,10 @@ $cBlack: black;
     animation: sk-bouncedelay 1.4s infinite;
   }
 
+
+  &:nth-child(1) {
+   animation-delay: -0.32s;
+  }
   & .bounce1 {
     animation-delay: -0.32s;
   }
