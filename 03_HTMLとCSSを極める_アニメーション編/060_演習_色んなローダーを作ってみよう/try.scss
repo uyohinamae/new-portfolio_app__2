@@ -3,7 +3,17 @@
 .try {
   /** ここに記述しよう */
   .spinner {
-    
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+
+    margin: 100px auto;
+    @include animation(
+      $name: sk-rotateplane,
+      $duration: 1.2s,
+      $iteration-count: infinite,
+      $timing-function: ease-in-out
+    );
   }
 
   .double-spinner {
