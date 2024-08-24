@@ -53,6 +53,16 @@
       }
   }
 
+  @keyframes sk-bounce {
+    0%,
+    100% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1);
+    }
+  }
+
   .rect-spinner {
     margin: 100px auto;
     width: 50px;
@@ -72,6 +82,23 @@
         $timing-function: ease-in-out
       );
 
+      @for $i from 1 through 5 {
+        &:nth-child(#{$i}) {
+          animation-delay: -1.3s + $i * 0.1s;
+        }
+      }
+
+  }
+}
+
+@keyframes sk-stretchdelay {
+  0%,
+  40%,
+  100% {
+    transform: scaleY(0.4);
+  }
+  20% {
+    transform: scaleY(1);
   }
 }
 }

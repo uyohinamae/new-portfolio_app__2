@@ -2,3 +2,41 @@
 .try {
   /** ここに記述しよう */
 }/*# sourceMappingURL=try.css.map */
+#container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+#container > div {
+  flex-basis: 300px;
+}
+
+.copyright {
+  font-size: 0.9em;
+  margin-bottom: 5rem;
+  text-align: right;
+}
+.answer .spinner {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  margin: 100px auto;
+  animation-name: sk-rotateplane;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+@keyframes sk-rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+  }
+}
