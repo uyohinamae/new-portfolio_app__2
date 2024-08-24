@@ -15,7 +15,17 @@
       $timing-function: ease-in-out
     );
   }
-
+  @keyframes sk-rotateplane {
+    0% {
+      transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+      transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
+    }
+    100% {
+      transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+    }
+  }
   .double-spinner {
     width: 40px;
     height: 40px;
@@ -37,6 +47,10 @@
         $iteration-count: infinite,
         $timing-function: ease-in-out
       );
+
+      &:nth-child(2) {
+        animation-delay: -1s;
+      }
   }
 
   .rect-spinner {
