@@ -21,9 +21,44 @@
     height: 40px;
     position: relative;
     margin: 100px auto;
+
+    & > div {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-color: #333;
+      opacity: 0.6;
+      position: absolute;
+      top: 0;
+      left: 0;
+      @include animation(
+        $name: sk-bounce,
+        $duration: 2s,
+        $iteration-count: infinite,
+        $timing-function: ease-in-out
+      );
   }
 
   .rect-spinner {
-    
+    margin: 100px auto;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    letter-spacing: -2px;
+
+    & > div {
+      background-color: #333;
+      height: 100%;
+      width: 6px;
+      display: inline-block;
+      @include animation(
+        $name: sk-stretchdelay,
+        $duration: 1.2s,
+        $iteration-count: infinite,
+        $timing-function: ease-in-out
+      );
+
   }
+}
+}
 }
