@@ -11,4 +11,8 @@
 }
 .mobile-menu-icon > span:last-child {
   margin-bottom: 0;
+}
+
+.menu-open {
+  background-color: black;
 }/*# sourceMappingURL=style.css.map */
