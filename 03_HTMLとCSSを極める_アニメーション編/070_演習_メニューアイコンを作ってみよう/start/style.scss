@@ -1,7 +1,12 @@
 $cBlack: black;
+$cWhite: white;
+
+
 .mobile-menu-icon {
     background-color: transparent;
     border: none;
+    outline: none !important;
+    cursor: pointer;
 
     & > span {
         background-color: $cBlack;
@@ -9,6 +14,7 @@ $cBlack: black;
         height: 2px;
         display: block;
         margin-bottom: 9px;
+        transition: transform 0.7s;
 
         &:last-child {
             margin-bottom: 0;
@@ -18,4 +24,22 @@ $cBlack: black;
 
 .menu-open {
     background-color: $cBlack;
+
+    & .mobile-menu-icon {
+       & > span {
+        background-color: $cWhite;
+
+        &:nth-child(1) {
+            transition-delay: 70ms;
+            transform: translateY(11px) rotate(135deg);
+        }
+        &:nth-child(2) {
+            transition-delay: 0ms;
+            transform: translateX(-18px) scaleX(0);
+        }
+        &:nth-child(3) {
+            transform: translateY(-11px) rotate(-135deg);
+        }
+       }
+    }
 }
