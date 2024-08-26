@@ -1,4 +1,7 @@
 #container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 #container > div {
   flex-basis: 300px;
@@ -110,4 +113,4 @@
   20% {
     transform: scaleY(1);
   }
-}/*# sourceMappingURL=answer.css.map */
+}/*# sourceMappingURL=try.css.map */
