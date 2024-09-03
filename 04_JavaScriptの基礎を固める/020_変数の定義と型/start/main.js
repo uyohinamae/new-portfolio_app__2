@@ -7,9 +7,9 @@ Number, string, Boolean, undefined, Null, Symbol
 
 // 動的型付け言語
 let variable = 'str'
-variavle = 12;
-variavle = false;
-variavle = undefined;
+variable = 12;
+variable = false;
+variable = undefined;
 
 console.log(typeof variable)
 
