@@ -1,6 +1,6 @@
 // var, let, const
 let name = 'Tom';
-name = 'Tim';
+// name = 'Tim';
 console.log('hello ' + name);
 
 // データ型：Number, String, Boolean, Undefined, Null, Symbol
