@@ -1,9 +1,6 @@
-const hello = (name, age) => {
-    console.log('hello ' + name + age);
-    console.log('hello ' + name + age);
-}
+const hello = (name, age) => 40;
     
 
+const arry = [1,2,3,4,5,6];
 
-hello('Code Mafia' , 10);
-hello('Code Mafia 2',20);
+arry.forEach(value => console.log(value));
