@@ -1,9 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
+    const btn = document.querySelector('#btn')
     const ta = new TextAnimation('.animate-title');
     const ta2 = new TextAnimation('.animate-title-2');
     ta.animate();
     ta2.animate();
+    btn.addEventListener('click', ta.animate.bind(ta));
+
 });
+
+
 
 class TextAnimation {
     constructor(el) {
@@ -18,6 +23,6 @@ class TextAnimation {
         }, "");
     }
     animate() {
-        this.el.classList.toggle('inview');
+        this.el.classList.toggle('inview');  
     }
 }
