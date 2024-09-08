@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const ta2 = new TextAnimation('.animate-title-2');
     ta.animate();
     ta2.animate();
-    btn.addEventListener('click', ta.animate.bind(ta));
+    btn.addEventListener('click', ta.animate.bind(ta))
 
 });
 
