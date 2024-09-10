@@ -10,6 +10,14 @@ const obj = {
     }
 }
 
+const window = {
+    setTimeout: function(fn) {
+        fn();
+    }
+}
+
+
+
 class MyObj {
     constructor() {
         this.first_name = 'Mafia';
@@ -25,8 +33,8 @@ class MyObj {
     }
 }
 
-const obj2 = new MyObj();
+ const obj2 = new MyObj();
 
 
-obj.printFullName();
-obj2.printFullName();
+ obj.printFullName();
+ obj2.printFullName();
