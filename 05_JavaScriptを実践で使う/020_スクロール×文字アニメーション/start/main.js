@@ -10,12 +10,12 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
         }
     });
-    // alert('intersecting');
+   
 }
 const options = {
     root: null,
-    rootMargin: "-300px 0px",
-    threshold: [0, 0.5, 1]
+    rootMargin: "0px",
+    threshold: 0
 };
 const io = new IntersectionObserver(cb, options);
 els.forEach(el => io.observe(el));
