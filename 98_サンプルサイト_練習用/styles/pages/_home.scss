@@ -1,2 +1,7 @@
 @use "../globals" as *;
 @use "../parts/common" as *;
+
+.houses {
+    @extend .content-width;
+    @extend .mb-lg;
+}
