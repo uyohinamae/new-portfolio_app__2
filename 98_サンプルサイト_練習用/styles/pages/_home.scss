@@ -38,10 +38,22 @@
     }
 
     &__inner {
+       position: relative;
 
+       &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 90%;
+        width: 100%;
+        background: $cBgGray;
+       }
     }
 
     &__container {
+        position: relative;
+        z-index: 2;
        @extend .content-width;
        @extend .flex;
        justify-content: space-between;
@@ -53,6 +65,9 @@
        }
        @include mq(lg) {
         flex-basis: 25%;
+       }
+       @include mq(xl) {
+        flex-basis: 23%;
        }
     }
 
