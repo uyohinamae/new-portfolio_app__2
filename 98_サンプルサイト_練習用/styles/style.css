@@ -643,7 +643,7 @@ img {
   vertical-align: bottom;
 }
 
-.mb-sm, .houses__title, .sub-title {
+.mb-sm, .houses__title, .popular__title, .sub-title {
   margin-bottom: 16px !important;
 }
 
@@ -766,6 +766,7 @@ img {
 }
 .popular__img {
   height: 150px;
+  margin-bottom: 5px;
 }
 .popular__img > img {
   width: 100%;

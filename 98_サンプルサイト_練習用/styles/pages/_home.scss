@@ -54,11 +54,13 @@
     }
 
     &__title {
-
+       @extend .mb-sm;
+       @extend .font-mb;
     }
 
     &__img {
        height: 150px;
+       margin-bottom: 5px;
 
        & > img {
         width: 100%;
