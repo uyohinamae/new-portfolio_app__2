@@ -51,6 +51,9 @@
        @include mq(md) {
         flex-basis: 47%;
        }
+       @include mq(lg) {
+        flex-basis: 25%;
+       }
     }
 
     &__title {
@@ -61,6 +64,10 @@
     &__img {
        height: 150px;
        margin-bottom: 5px;
+
+       @include mq(lg) {
+        height: 335px;
+       }
 
        & > img {
         width: 100%;
