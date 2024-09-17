@@ -95,5 +95,6 @@
     &__btn {
         text-align: center;
         flex-basis: 100%;
+        @extend .mb-lg;
     }
 }
