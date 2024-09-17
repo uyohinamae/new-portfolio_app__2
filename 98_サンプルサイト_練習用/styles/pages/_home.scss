@@ -1,6 +1,17 @@
 @use "../globals" as *;
 @use "../parts/common" as *;
 
+
+
+.travel {
+    @extend .content-width;
+    @extend .mb-lg;
+
+    &__inner {
+        background: $cBgGray;
+    }
+}
+
 .houses {
     @extend .content-width;
     @extend .mb-lg;
@@ -73,7 +84,7 @@
 
     &__title {
        @extend .mb-sm;
-       @extend .font-mb;
+       @extend .font-md;
     }
 
     &__img {
