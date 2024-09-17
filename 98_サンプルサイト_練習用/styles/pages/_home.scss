@@ -8,7 +8,24 @@
     @extend .mb-lg;
 
     &__inner {
+        @extend .flex;
         background: $cBgGray;
+        padding: 15px;
+
+        @include mq(md) {
+            padding: 50px;
+        }
+
+        @include mq(xl) {
+            padding: 50px 150px;
+        }
+    }
+
+    &__texts {
+        @include mq(md) {
+            display: flex;
+            align-items: flex-end
+        }
     }
 }
 

@@ -675,12 +675,12 @@ img {
   max-width: 1070px;
 }
 
-.flex, .houses__inner, .popular__container {
+.flex, .travel__inner, .houses__inner, .popular__container {
   display: flex;
   flex-direction: column;
 }
 @media screen and (min-width: 600px) {
-  .flex, .houses__inner, .popular__container {
+  .flex, .travel__inner, .houses__inner, .popular__container {
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -743,6 +743,23 @@ img {
 
 .travel__inner {
   background: #eaebe6;
+  padding: 15px;
+}
+@media screen and (min-width: 600px) {
+  .travel__inner {
+    padding: 50px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .travel__inner {
+    padding: 50px 150px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .travel__texts {
+    display: flex;
+    align-items: flex-end;
+  }
 }
 
 @media screen and (min-width: 600px) {
