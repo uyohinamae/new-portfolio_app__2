@@ -20,11 +20,22 @@
             padding: 50px 150px;
         }
     }
+    &__img{
+        & > img {
+            opacity: 1;
+        }
+    }
 
     &__texts {
         @include mq(md) {
             display: flex;
             align-items: flex-end
+        }
+    }
+
+    &__description {
+        @include mq(lg) {
+            margin-bottom: 40px;
         }
     }
 }
