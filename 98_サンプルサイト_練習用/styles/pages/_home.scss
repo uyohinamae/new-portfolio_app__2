@@ -22,7 +22,15 @@
     }
     &__img{
         height: 300px;
-        @extemd .mb-sm;
+        @extend .mb-sm;
+
+        @include mq(mb) {
+            flex-basis: 47%;
+        }
+        
+        @include mq(lg) {
+           height: 400%;
+        }
 
         & > img {
             opacity: 1;
