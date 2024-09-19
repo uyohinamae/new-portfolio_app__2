@@ -21,8 +21,14 @@
         }
     }
     &__img{
+        height: 300px;
+        @extemd .mb-sm;
+
         & > img {
             opacity: 1;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
         }
     }
 
