@@ -211,6 +211,7 @@
 
     &__ul {
         @extend .flex;
+        list-style: none;
     }
 }
 

@@ -912,6 +912,10 @@ img {
   align-items: center;
   text-align: center;
 }
+.footer__ul {
+  list-style: none;
+}
+
 .logo {
   font-size: 42px;
   display: flex;
