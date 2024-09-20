@@ -745,6 +745,13 @@ img {
   color: #535353;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 .travel__inner {
   position: relative;
   z-index: 0;
