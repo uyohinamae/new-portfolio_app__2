@@ -212,6 +212,30 @@
     &__ul {
         @extend .flex;
         list-style: none;
+        padding: 0;
+    }
+
+    &__li {
+        margin: 10px;
+
+        @include mq(md) {
+            margin-left: 0;
+            margin-right: 30px;
+        }
+
+        & > a {
+            color: $cSubTitle;
+            text-decoration: none;
+        }
+    }
+
+    & > .logo {
+        font-size: 38px;
+        justify-content: center;
+
+        @include mq(md) {
+            justify-content: flex-start;
+        }
     }
 }
 

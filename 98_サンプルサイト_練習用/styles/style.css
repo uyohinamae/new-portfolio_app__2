@@ -914,6 +914,29 @@ img {
 }
 .footer__ul {
   list-style: none;
+  padding: 0;
+}
+.footer__li {
+  margin: 10px;
+}
+@media screen and (min-width: 600px) {
+  .footer__li {
+    margin-left: 0;
+    margin-right: 30px;
+  }
+}
+.footer__li > a {
+  color: #535353;
+  text-decoration: none;
+}
+.footer > .logo {
+  font-size: 38px;
+  justify-content: center;
+}
+@media screen and (min-width: 600px) {
+  .footer > .logo {
+    justify-content: flex-start;
+  }
 }
 
 .logo {
