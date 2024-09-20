@@ -6,6 +6,19 @@
     top: 0;
     left: 0;
     width: 100%;
+    height: $navHeight;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        @extend .content-width;
+    }
 }
 
 .travel {
