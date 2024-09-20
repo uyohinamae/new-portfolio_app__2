@@ -9,6 +9,7 @@
 
     &__inner {
         @extend .flex;
+        justify-content: space-between;
         background: $cBgGray;
         padding: 15px;
 
@@ -24,7 +25,7 @@
         height: 300px;
         @extend .mb-sm;
 
-        @include mq(mb) {
+        @include mq(md) {
             flex-basis: 47%;
         }
         
@@ -41,9 +42,33 @@
     }
 
     &__texts {
+       @extend.pb-sm;
+
         @include mq(md) {
             display: flex;
-            align-items: flex-end
+            align-items: flex-end;
+            flex-basis: 47%;
+        }
+
+        &.inview {
+            & .travel__title::before {
+                @include animation($name: scaleX, $duration: 0.3s,$delay:1.5s);
+            }
+        }
+    }
+
+    &__title {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            height: 1px;
+            width: 100px;
+            top: 50%;
+            left: -120px;
+            background-color: $cBlack;
+            transform: scale(0);
         }
     }
 
@@ -53,6 +78,16 @@
         }
     }
 }
+
+@keyframes scaleX {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
 
 .houses {
     @extend .content-width;
