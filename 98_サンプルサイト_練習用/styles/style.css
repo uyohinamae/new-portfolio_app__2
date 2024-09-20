@@ -762,6 +762,7 @@ img {
 }
 .travel__img {
   height: 300px;
+  box-shadow: inset;
 }
 @media screen and (min-width: 600px) {
   .travel__img {
@@ -800,6 +801,7 @@ img {
   position: relative;
 }
 .travel__title::before {
+  display: none;
   position: absolute;
   content: "";
   height: 1px;
@@ -808,6 +810,12 @@ img {
   left: -120px;
   background-color: black;
   transform: scale(0);
+  transform-origin: right;
+}
+@media screen and (min-width: 960px) {
+  .travel__title::before {
+    display: block;
+  }
 }
 @media screen and (min-width: 960px) {
   .travel__description {
