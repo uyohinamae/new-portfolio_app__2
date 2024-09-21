@@ -19,6 +19,44 @@
         align-self: center;
         @extend .content-width;
     }
+
+    &__nav {
+        @extend .flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__ul {
+       display: flex;
+       align-items: center;
+        list-style: none;
+        padding: 0;
+    }
+
+    &__li {
+        margin: 10px;
+
+        @include mq(md) {
+            margin-left: 30px;
+            margin-right: 0;
+        }
+
+        & > a {
+            color: $cBlack;
+            text-decoration: none;
+        }
+    }
+
+    & > .logo {
+        font-size: 38px;
+        justify-content: center;
+
+        @include mq(md) {
+            justify-content: flex-start;
+        }
+    }
+ 
 }
 
 .travel {
