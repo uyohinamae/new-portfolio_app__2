@@ -547,6 +547,11 @@
   outline: none !important;
   cursor: pointer;
 }
+@media screen and (min-width: 960px) {
+  .mobile-menu__btn {
+    display: none;
+  }
+}
 .mobile-menu__btn > span {
   background-color: black;
   width: 35px;
