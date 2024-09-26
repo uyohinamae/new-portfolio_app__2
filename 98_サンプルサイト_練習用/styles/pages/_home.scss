@@ -78,6 +78,10 @@
     }
 }
 
+.hero {
+    @extend .pb-lg;
+}
+
 .travel {
     @extend .content-width;
     @extend .mb-lg;
