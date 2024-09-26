@@ -808,12 +808,12 @@ img {
   text-decoration: none;
   text-transform: uppercase;
 }
-.header > .logo {
-  font-size: 38px;
+.header .logo {
+  font-size: 35px;
   justify-content: center;
 }
 @media screen and (min-width: 600px) {
-  .header > .logo {
+  .header .logo {
     justify-content: flex-start;
   }
 }

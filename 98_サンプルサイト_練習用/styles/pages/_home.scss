@@ -68,15 +68,14 @@
         }
     }
 
-    & > .logo {
-        font-size: 38px;
+    & .logo {
+        font-size: 35px;
         justify-content: center;
 
         @include mq(md) {
             justify-content: flex-start;
         }
     }
- 
 }
 
 .travel {
