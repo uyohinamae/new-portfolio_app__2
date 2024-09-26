@@ -750,6 +750,13 @@ img {
   color: #535353;
 }
 
+#container {
+  background: white;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -761,6 +768,10 @@ img {
   align-items: center;
   z-index: 100;
 }
+.header.triggered {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 10px 0 25px -10px rgba(0, 0, 0, 0.5);
+}
 .header__inner {
   display: flex;
   justify-content: space-between;
@@ -770,6 +781,12 @@ img {
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  display: none;
+}
+@media screen and (min-width: 960px) {
+  .header__nav {
+    display: block;
+  }
 }
 .header__ul {
   display: flex;
@@ -789,6 +806,7 @@ img {
 .header__li > a {
   color: black;
   text-decoration: none;
+  text-transform: uppercase;
 }
 .header > .logo {
   font-size: 38px;
