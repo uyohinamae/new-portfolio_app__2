@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded' , function() {
 
     const so2 = new ScrollObserver('.cover-slide', _inviewAnimation);
 
-    const header = document.querySelector('.header')
+    // const header = document.querySelector('.header')
     const _navAnimation = function (el, inview)  {
     if(inview)  {
         header.classList.remove('triggered');
@@ -35,3 +35,24 @@ document.addEventListener('DOMContentLoaded' , function() {
 
     new MobileMenu;
 });
+
+class Main {
+    constructor() {
+        this.header = document.querySelector('.header')
+        this._observers = [];
+    }
+
+
+    _scrollInit() {
+        this._observers.push()
+             new ScrollObserver('.nav-trigger', _navAnimation, { once: false })
+    }
+
+    _navAnimation(el, inview)  {
+        if(inview)  {
+            header.classList.remove('triggered');
+        } else {
+            header.classList.add('triggered');
+        }
+     }
+}
