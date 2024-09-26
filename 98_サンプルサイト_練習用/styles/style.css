@@ -1021,4 +1021,14 @@ img {
 }
 .logo__world {
   color: #904669;
+}
+
+.side {
+  display: none;
+  position: fixed;
+}
+@media screen and (min-width: 1280px) {
+  .side {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */

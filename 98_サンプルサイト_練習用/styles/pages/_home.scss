@@ -327,3 +327,12 @@
         color: $cWineRed;
     }
 }
+
+.side {
+    display: none;
+    position: fixed;
+
+    @include mq(xl) {
+        display: block;
+    }
+}
