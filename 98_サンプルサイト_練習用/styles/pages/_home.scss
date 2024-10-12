@@ -185,6 +185,9 @@
 
     &__inner {
         @extend .flex;
+        justify-content: center;
+        align-items: center;
+
     }
 
     &__title {
