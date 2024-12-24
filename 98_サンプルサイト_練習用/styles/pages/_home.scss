@@ -92,7 +92,7 @@
         @extend .flex;
         justify-content: space-between;
         background: $cBgGray;
-        padding: 15px;
+        padding: 30px;
 
         @include mq(md) {
             padding: 50px;
@@ -104,7 +104,7 @@
     }
     &__img{
         @extend .mb-sm;
-        height: 300px;
+        
         box-shadow: inset 0 0 30px $cBlack;
 
         @include mq(md) {
@@ -112,7 +112,7 @@
         }
         
         @include mq(lg) {
-           height: 400%;
+           height: 100%;
         }
 
         & > img {
@@ -175,39 +175,6 @@
     }
     100% {
         transform: scaleX(1);
-    }
-}
-
-
-.houses {
-    @extend .content-width;
-    @extend .mb-lg;
-
-    &__inner {
-        @extend .flex;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    &__title {
-        @extend .mb-sm;
-        @extend .font-lr;
-    }
-
-    &__item {
-        @include mq(md) {
-            flex-basis: 50%;
-        }
-        @include mq(lg) {
-            margin-bottom: 60px;
-        }
-       
-    }
-
-    &__btn {
-        text-align: center;
-        flex-basis: 100%;
     }
 }
 
@@ -334,6 +301,7 @@
         color: $cWineRed;
     }
 }
+
 
 .side {
     display: none;
